@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
     <nav class="navbar">
         <div class="nav-container">
             <h1 class="logo">🐱 I like cats</h1>
@@ -17,11 +16,11 @@
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#journal">Journal</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">CAT IS GOOD <img src="image.png" alt="Beluga Cat" style="max-width: 100px; height: auto; display: inline-block; margin-left: 10px;"></h1>
@@ -32,7 +31,6 @@
         <div class="hero-emoji">🐱✨</div>
     </section>
 
-    <!-- ABOUT ME SECTION -->
     <section id="about" class="section about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -47,7 +45,6 @@
         </div>
     </section>
 
-    <!-- INTERESTS SECTION -->
     <section id="interests" class="section interests">
         <div class="container">
             <h2 class="section-title">My Interests</h2>
@@ -62,10 +59,10 @@
                     <h3>Cat Videos</h3>
                     <p>Watching cat videos and funny cat moments online</p>
                 </div>
-                <div class="interest-card" style="background: linear-gradient(135deg, #95E1D3, #F38181);">
+                <div class="interest-card" id="fact-card" style="background: linear-gradient(135deg, #95E1D3, #F38181); cursor: pointer;">
                     <div class="interest-icon">📚</div>
                     <h3>Cat Facts</h3>
-                    <p>Reading and sharing interesting facts about cats</p>
+                    <p id="fact-text">Click me to get a random cat fact!</p>
                 </div>
                 <div class="interest-card" style="background: linear-gradient(135deg, #FFB6B9, #FEC8D8);">
                     <div class="interest-icon">🎨</div>
@@ -76,7 +73,6 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
@@ -100,7 +96,6 @@
         </div>
     </section>
 
-    <!-- LEARNING JOURNAL SECTION -->
     <section id="journal" class="section journal">
         <div class="container">
             <h2 class="section-title">Learning Journal</h2>
@@ -130,13 +125,27 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Enlist as a Cat Worshiper</h2>
+            <p class="section-subtitle">Reach out to talk about cats, share cat videos, or join the alliance!</p>
+            
+            <div class="contact-form">
+                <h3>Send a Message ✉️</h3>
+                <input type="text" id="nameInput" placeholder="Your Name" required>
+                <input type="email" id="emailInput" placeholder="Your Email (must include @)" required>
+                <textarea id="messageInput" rows="5" placeholder="Your Message about cats..." required></textarea>
+                <button class="submit-btn" onclick="sendMessage()">Send Message 🐱</button>
+                <div id="feedbackMessage"></div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <p>&copy; 2026 I like cats | Made with 💜 and 🐱</p>
         <p>Worshiping cats since 7th grade</p>
     </footer>
 
-    <!-- SCRIPT -->
     <script src="script.js"></script>
 </body>
 </html>
