@@ -35,4 +35,4 @@ if (factCard && factText) {
         factText.style.opacity = 0;
         setTimeout(() => {
             factText.textContent = randomFact;
-            factText.style.
+            factText.style. 
